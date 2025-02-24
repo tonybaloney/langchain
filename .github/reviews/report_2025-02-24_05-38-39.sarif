@@ -5,7 +5,7 @@
     {
       "tool": {
         "driver": {
-          "name": "PyCharm",
+          "name": "PyCharm Security",
           "version": "243.24978.54",
           "informationUri": "https://www.jetbrains.com?utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2024.3",
           "rules": [
@@ -58,7 +58,7 @@
         {
           "executionSuccessful": true,
           "workingDirectory": {
-            "uri": "file:///C:/Users/anthonyshaw/PycharmProjects/langchain/"
+            "uri": ""
           }
         }
       ],
@@ -75,7 +75,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                  "uri": "libs/core/langchain_core/indexing/api.py"
                 },
                 "region": {
                   "startLine": 47,
@@ -103,7 +103,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                  "uri": "libs/core/langchain_core/indexing/api.py"
                 },
                 "region": {
                   "startLine": 40,
@@ -131,7 +131,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                  "uri": "libs/core/langchain_core/indexing/api.py"
                 },
                 "region": {
                   "startLine": 47,
@@ -159,7 +159,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/embeddings/fake.py"
+                  "uri": "libs/core/langchain_core/embeddings/fake.py"
                 },
                 "region": {
                   "startLine": 117,
@@ -187,7 +187,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/age_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/age_graph.py"
                 },
                 "region": {
                   "startLine": 729,
@@ -215,7 +215,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/myscale.py"
+                  "uri": "libs/community/langchain_community/vectorstores/myscale.py"
                 },
                 "region": {
                   "startLine": 252,
@@ -243,7 +243,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/vectara.py"
+                  "uri": "libs/community/langchain_community/vectorstores/vectara.py"
                 },
                 "region": {
                   "startLine": 387,
@@ -271,7 +271,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                  "uri": "libs/core/langchain_core/indexing/api.py"
                 },
                 "region": {
                   "startLine": 40,
@@ -299,7 +299,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/myscale.py"
+                  "uri": "libs/community/langchain_community/vectorstores/myscale.py"
                 },
                 "region": {
                   "startLine": 252,
@@ -327,7 +327,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/memgraph_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/memgraph_graph.py"
                 },
                 "region": {
                   "startLine": 499,
@@ -355,7 +355,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/evernote.py"
+                  "uri": "libs/community/langchain_community/document_loaders/evernote.py"
                 },
                 "region": {
                   "startLine": 92,
@@ -383,7 +383,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/memgraph_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/memgraph_graph.py"
                 },
                 "region": {
                   "startLine": 499,
@@ -411,7 +411,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/callbacks/utils.py"
+                  "uri": "libs/community/langchain_community/callbacks/utils.py"
                 },
                 "region": {
                   "startLine": 74,
@@ -439,7 +439,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/docugami.py"
+                  "uri": "libs/community/langchain_community/document_loaders/docugami.py"
                 },
                 "region": {
                   "startLine": 132,
@@ -467,7 +467,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/yellowbrick.py"
+                  "uri": "libs/community/langchain_community/vectorstores/yellowbrick.py"
                 },
                 "region": {
                   "startLine": 510,
@@ -495,7 +495,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/manticore_search.py"
+                  "uri": "libs/community/langchain_community/vectorstores/manticore_search.py"
                 },
                 "region": {
                   "startLine": 212,
@@ -523,7 +523,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/apache_doris.py"
+                  "uri": "libs/community/langchain_community/vectorstores/apache_doris.py"
                 },
                 "region": {
                   "startLine": 212,
@@ -551,7 +551,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/embeddings/fake.py"
+                  "uri": "libs/community/langchain_community/embeddings/fake.py"
                 },
                 "region": {
                   "startLine": 44,
@@ -579,7 +579,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/kuzu_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/kuzu_graph.py"
                 },
                 "region": {
                   "startLine": 188,
@@ -607,7 +607,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/callbacks/utils.py"
+                  "uri": "libs/community/langchain_community/callbacks/utils.py"
                 },
                 "region": {
                   "startLine": 74,
@@ -635,7 +635,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/langchain/langchain/embeddings/cache.py"
+                  "uri": "libs/langchain/langchain/embeddings/cache.py"
                 },
                 "region": {
                   "startLine": 29,
@@ -663,7 +663,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/age_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/age_graph.py"
                 },
                 "region": {
                   "startLine": 729,
@@ -691,7 +691,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/yellowbrick.py"
+                  "uri": "libs/community/langchain_community/vectorstores/yellowbrick.py"
                 },
                 "region": {
                   "startLine": 510,
@@ -719,7 +719,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                  "uri": "libs/community/langchain_community/vectorstores/oraclevs.py"
                 },
                 "region": {
                   "startLine": 628,
@@ -747,7 +747,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/gremlin_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/gremlin_graph.py"
                 },
                 "region": {
                   "startLine": 129,
@@ -775,7 +775,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                  "uri": "libs/community/langchain_community/cache.py"
                 },
                 "region": {
                   "startLine": 1614,
@@ -803,7 +803,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/falkordb_vector.py"
                 },
                 "region": {
                   "startLine": 954,
@@ -831,7 +831,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/langchain/langchain/embeddings/cache.py"
+                  "uri": "libs/langchain/langchain/embeddings/cache.py"
                 },
                 "region": {
                   "startLine": 29,
@@ -859,7 +859,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/retrievers/pinecone_hybrid_search.py"
+                  "uri": "libs/community/langchain_community/retrievers/pinecone_hybrid_search.py"
                 },
                 "region": {
                   "startLine": 23,
@@ -887,7 +887,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/databricks/tool.py"
+                  "uri": "libs/community/langchain_community/tools/databricks/tool.py"
                 },
                 "region": {
                   "startLine": 78,
@@ -915,7 +915,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                  "uri": "libs/community/langchain_community/cache.py"
                 },
                 "region": {
                   "startLine": 105,
@@ -943,7 +943,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                  "uri": "libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
                 },
                 "region": {
                   "startLine": 183,
@@ -971,7 +971,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                  "uri": "libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
                 },
                 "region": {
                   "startLine": 183,
@@ -999,7 +999,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                  "uri": "libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
                 },
                 "region": {
                   "startLine": 418,
@@ -1027,7 +1027,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/neo4j_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/neo4j_graph.py"
                 },
                 "region": {
                   "startLine": 651,
@@ -1055,7 +1055,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/neo4j_vector.py"
                 },
                 "region": {
                   "startLine": 944,
@@ -1083,7 +1083,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/falkordb_vector.py"
                 },
                 "region": {
                   "startLine": 777,
@@ -1111,7 +1111,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                  "uri": "libs/community/langchain_community/cache.py"
                 },
                 "region": {
                   "startLine": 1614,
@@ -1139,7 +1139,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/neo4j_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/neo4j_graph.py"
                 },
                 "region": {
                   "startLine": 651,
@@ -1167,7 +1167,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/falkordb_vector.py"
                 },
                 "region": {
                   "startLine": 954,
@@ -1195,7 +1195,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/evernote.py"
+                  "uri": "libs/community/langchain_community/document_loaders/evernote.py"
                 },
                 "region": {
                   "startLine": 92,
@@ -1223,7 +1223,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                  "uri": "libs/community/langchain_community/cache.py"
                 },
                 "region": {
                   "startLine": 105,
@@ -1251,7 +1251,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/docugami.py"
+                  "uri": "libs/community/langchain_community/document_loaders/docugami.py"
                 },
                 "region": {
                   "startLine": 132,
@@ -1279,7 +1279,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/neo4j_vector.py"
                 },
                 "region": {
                   "startLine": 869,
@@ -1307,7 +1307,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/starrocks.py"
+                  "uri": "libs/community/langchain_community/vectorstores/starrocks.py"
                 },
                 "region": {
                   "startLine": 265,
@@ -1335,7 +1335,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/apache_doris.py"
+                  "uri": "libs/community/langchain_community/vectorstores/apache_doris.py"
                 },
                 "region": {
                   "startLine": 212,
@@ -1363,7 +1363,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/oracleai.py"
+                  "uri": "libs/community/langchain_community/document_loaders/oracleai.py"
                 },
                 "region": {
                   "startLine": 88,
@@ -1391,7 +1391,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/gremlin_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/gremlin_graph.py"
                 },
                 "region": {
                   "startLine": 129,
@@ -1419,7 +1419,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                  "uri": "libs/community/langchain_community/vectorstores/oraclevs.py"
                 },
                 "region": {
                   "startLine": 619,
@@ -1447,7 +1447,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                  "uri": "libs/community/langchain_community/vectorstores/oraclevs.py"
                 },
                 "region": {
                   "startLine": 1019,
@@ -1475,7 +1475,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/starrocks.py"
+                  "uri": "libs/community/langchain_community/vectorstores/starrocks.py"
                 },
                 "region": {
                   "startLine": 265,
@@ -1503,7 +1503,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/clickhouse.py"
+                  "uri": "libs/community/langchain_community/vectorstores/clickhouse.py"
                 },
                 "region": {
                   "startLine": 462,
@@ -1531,7 +1531,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/databricks/tool.py"
+                  "uri": "libs/community/langchain_community/tools/databricks/tool.py"
                 },
                 "region": {
                   "startLine": 78,
@@ -1559,7 +1559,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/neo4j_vector.py"
                 },
                 "region": {
                   "startLine": 869,
@@ -1587,7 +1587,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/clickhouse.py"
+                  "uri": "libs/community/langchain_community/vectorstores/clickhouse.py"
                 },
                 "region": {
                   "startLine": 462,
@@ -1615,7 +1615,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/falkordb_vector.py"
                 },
                 "region": {
                   "startLine": 777,
@@ -1643,7 +1643,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/kuzu_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/kuzu_graph.py"
                 },
                 "region": {
                   "startLine": 188,
@@ -1671,7 +1671,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                  "uri": "libs/community/langchain_community/vectorstores/oraclevs.py"
                 },
                 "region": {
                   "startLine": 613,
@@ -1699,7 +1699,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                  "uri": "libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
                 },
                 "region": {
                   "startLine": 418,
@@ -1727,7 +1727,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/neo4j_vector.py"
                 },
                 "region": {
                   "startLine": 944,
@@ -1755,7 +1755,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/vectara.py"
+                  "uri": "libs/community/langchain_community/vectorstores/vectara.py"
                 },
                 "region": {
                   "startLine": 387,
@@ -1783,7 +1783,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/manticore_search.py"
+                  "uri": "libs/community/langchain_community/vectorstores/manticore_search.py"
                 },
                 "region": {
                   "startLine": 212,
@@ -1811,7 +1811,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/tiledb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/tiledb.py"
                 },
                 "region": {
                   "startLine": 191,
@@ -1839,7 +1839,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/self_hosted.py"
+                  "uri": "libs/community/langchain_community/llms/self_hosted.py"
                 },
                 "region": {
                   "startLine": 41,
@@ -1867,7 +1867,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/faiss.py"
+                  "uri": "libs/community/langchain_community/vectorstores/faiss.py"
                 },
                 "region": {
                   "startLine": 1249,
@@ -1895,7 +1895,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/scann.py"
+                  "uri": "libs/community/langchain_community/vectorstores/scann.py"
                 },
                 "region": {
                   "startLine": 500,
@@ -1923,7 +1923,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/faiss.py"
+                  "uri": "libs/community/langchain_community/vectorstores/faiss.py"
                 },
                 "region": {
                   "startLine": 1212,
@@ -1951,7 +1951,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/annoy.py"
+                  "uri": "libs/community/langchain_community/vectorstores/annoy.py"
                 },
                 "region": {
                   "startLine": 464,
@@ -1979,7 +1979,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/retrievers/tfidf.py"
+                  "uri": "libs/community/langchain_community/retrievers/tfidf.py"
                 },
                 "region": {
                   "startLine": 157,
@@ -2007,7 +2007,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/mlx_pipeline.py"
+                  "uri": "libs/community/langchain_community/llms/mlx_pipeline.py"
                 },
                 "region": {
                   "startLine": 255,
@@ -2035,7 +2035,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/neo4j_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/neo4j_graph.py"
                 },
                 "region": {
                   "startLine": 386,
@@ -2063,7 +2063,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/rwkv.py"
+                  "uri": "libs/community/langchain_community/llms/rwkv.py"
                 },
                 "region": {
                   "startLine": 192,
@@ -2091,7 +2091,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_models/mlx.py"
+                  "uri": "libs/community/langchain_community/chat_models/mlx.py"
                 },
                 "region": {
                   "startLine": 220,
@@ -2119,7 +2119,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/upstash_redis.py"
+                  "uri": "libs/community/langchain_community/chat_message_histories/upstash_redis.py"
                 },
                 "region": {
                   "startLine": 34,
@@ -2147,7 +2147,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/langchain/langchain/callbacks/streaming_aiter.py"
+                  "uri": "libs/langchain/langchain/callbacks/streaming_aiter.py"
                 },
                 "region": {
                   "startLine": 34,
@@ -2175,7 +2175,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/utils/mustache.py"
+                  "uri": "libs/core/langchain_core/utils/mustache.py"
                 },
                 "region": {
                   "startLine": 585,
@@ -2203,7 +2203,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/memgraph_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/memgraph_graph.py"
                 },
                 "region": {
                   "startLine": 304,
@@ -2231,7 +2231,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/utils/mustache.py"
+                  "uri": "libs/core/langchain_core/utils/mustache.py"
                 },
                 "region": {
                   "startLine": 587,
@@ -2259,7 +2259,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/utils/mustache.py"
+                  "uri": "libs/core/langchain_core/utils/mustache.py"
                 },
                 "region": {
                   "startLine": 529,
@@ -2287,7 +2287,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/xinference.py"
+                  "uri": "libs/community/langchain_community/llms/xinference.py"
                 },
                 "region": {
                   "startLine": 287,
@@ -2315,7 +2315,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/apache_doris.py"
+                  "uri": "libs/community/langchain_community/vectorstores/apache_doris.py"
                 },
                 "region": {
                   "startLine": 49,
@@ -2343,7 +2343,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/starrocks.py"
+                  "uri": "libs/community/langchain_community/vectorstores/starrocks.py"
                 },
                 "region": {
                   "startLine": 100,
@@ -2371,7 +2371,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                  "uri": "libs/community/langchain_community/tools/cogniswitch/tool.py"
                 },
                 "region": {
                   "startLine": 79,
@@ -2399,7 +2399,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                  "uri": "libs/community/langchain_community/tools/cogniswitch/tool.py"
                 },
                 "region": {
                   "startLine": 283,
@@ -2427,7 +2427,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                  "uri": "libs/community/langchain_community/tools/cogniswitch/tool.py"
                 },
                 "region": {
                   "startLine": 390,
@@ -2455,7 +2455,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                  "uri": "libs/community/langchain_community/tools/cogniswitch/tool.py"
                 },
                 "region": {
                   "startLine": 142,
@@ -2483,7 +2483,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/myscale.py"
+                  "uri": "libs/community/langchain_community/vectorstores/myscale.py"
                 },
                 "region": {
                   "startLine": 490,
@@ -2511,7 +2511,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 810,
@@ -2539,7 +2539,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 465,
@@ -2567,7 +2567,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/postgres.py"
+                  "uri": "libs/community/langchain_community/chat_message_histories/postgres.py"
                 },
                 "region": {
                   "startLine": 71,
@@ -2595,7 +2595,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                  "uri": "libs/community/langchain_community/vectorstores/oraclevs.py"
                 },
                 "region": {
                   "startLine": 110,
@@ -2623,7 +2623,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                  "uri": "libs/community/langchain_community/vectorstores/oraclevs.py"
                 },
                 "region": {
                   "startLine": 657,
@@ -2651,7 +2651,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 832,
@@ -2679,7 +2679,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/postgres.py"
+                  "uri": "libs/community/langchain_community/chat_message_histories/postgres.py"
                 },
                 "region": {
                   "startLine": 92,
@@ -2707,7 +2707,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/hanavector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/hanavector.py"
                 },
                 "region": {
                   "startLine": 397,
@@ -2735,7 +2735,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/spark_sql.py"
+                  "uri": "libs/community/langchain_community/utilities/spark_sql.py"
                 },
                 "region": {
                   "startLine": 130,
@@ -2763,7 +2763,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevec.py"
+                  "uri": "libs/community/langchain_community/vectorstores/sqlitevec.py"
                 },
                 "region": {
                   "startLine": 135,
@@ -2791,7 +2791,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevss.py"
+                  "uri": "libs/community/langchain_community/vectorstores/sqlitevss.py"
                 },
                 "region": {
                   "startLine": 130,
@@ -2819,7 +2819,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/chat_message_histories/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 268,
@@ -2847,7 +2847,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/age_graph.py"
+                  "uri": "libs/community/langchain_community/graphs/age_graph.py"
                 },
                 "region": {
                   "startLine": 89,
@@ -2875,7 +2875,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                  "uri": "libs/community/langchain_community/vectorstores/oraclevs.py"
                 },
                 "region": {
                   "startLine": 1025,
@@ -2903,7 +2903,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 844,
@@ -2931,7 +2931,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/databricks/_execution.py"
+                  "uri": "libs/community/langchain_community/tools/databricks/_execution.py"
                 },
                 "region": {
                   "startLine": 67,
@@ -2959,7 +2959,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevec.py"
+                  "uri": "libs/community/langchain_community/vectorstores/sqlitevec.py"
                 },
                 "region": {
                   "startLine": 141,
@@ -2987,7 +2987,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevss.py"
+                  "uri": "libs/community/langchain_community/vectorstores/sqlitevss.py"
                 },
                 "region": {
                   "startLine": 124,
@@ -3015,7 +3015,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                  "uri": "libs/community/langchain_community/utilities/cassandra_database.py"
                 },
                 "region": {
                   "startLine": 568,
@@ -3043,7 +3043,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                  "uri": "libs/community/langchain_community/utilities/cassandra_database.py"
                 },
                 "region": {
                   "startLine": 639,
@@ -3071,7 +3071,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/chat_message_histories/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 224,
@@ -3099,7 +3099,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                  "uri": "libs/community/langchain_community/utilities/cassandra_database.py"
                 },
                 "region": {
                   "startLine": 595,
@@ -3127,7 +3127,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/tidb.py"
+                  "uri": "libs/community/langchain_community/chat_message_histories/tidb.py"
                 },
                 "region": {
                   "startLine": 132,
@@ -3155,7 +3155,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/retrievers/vespa_retriever.py"
+                  "uri": "libs/community/langchain_community/retrievers/vespa_retriever.py"
                 },
                 "region": {
                   "startLine": 117,
@@ -3183,7 +3183,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/duckdb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/duckdb.py"
                 },
                 "region": {
                   "startLine": 187,
@@ -3211,7 +3211,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevss.py"
+                  "uri": "libs/community/langchain_community/vectorstores/sqlitevss.py"
                 },
                 "region": {
                   "startLine": 111,
@@ -3239,7 +3239,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                  "uri": "libs/community/langchain_community/utilities/cassandra_database.py"
                 },
                 "region": {
                   "startLine": 88,
@@ -3267,7 +3267,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 421,
@@ -3295,7 +3295,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevec.py"
+                  "uri": "libs/community/langchain_community/vectorstores/sqlitevec.py"
                 },
                 "region": {
                   "startLine": 122,
@@ -3323,7 +3323,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/duckdb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/duckdb.py"
                 },
                 "region": {
                   "startLine": 196,
@@ -3351,7 +3351,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/cassandra.py"
+                  "uri": "libs/community/langchain_community/document_loaders/cassandra.py"
                 },
                 "region": {
                   "startLine": 88,
@@ -3379,7 +3379,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/hanavector.py"
+                  "uri": "libs/community/langchain_community/vectorstores/hanavector.py"
                 },
                 "region": {
                   "startLine": 698,
@@ -3407,7 +3407,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/bigquery_vector_search.py"
+                  "uri": "libs/community/langchain_community/vectorstores/bigquery_vector_search.py"
                 },
                 "region": {
                   "startLine": 220,
@@ -3435,7 +3435,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/singlestoredb.py"
+                  "uri": "libs/community/langchain_community/chat_message_histories/singlestoredb.py"
                 },
                 "region": {
                   "startLine": 248,
@@ -3463,7 +3463,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/sql_database.py"
+                  "uri": "libs/community/langchain_community/utilities/sql_database.py"
                 },
                 "region": {
                   "startLine": 470,
@@ -3491,7 +3491,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/relyt.py"
+                  "uri": "libs/community/langchain_community/vectorstores/relyt.py"
                 },
                 "region": {
                   "startLine": 351,
@@ -3519,7 +3519,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/lantern.py"
+                  "uri": "libs/community/langchain_community/vectorstores/lantern.py"
                 },
                 "region": {
                   "startLine": 316,
@@ -3547,7 +3547,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/pgembedding.py"
+                  "uri": "libs/community/langchain_community/vectorstores/pgembedding.py"
                 },
                 "region": {
                   "startLine": 192,
@@ -3575,7 +3575,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/lantern.py"
+                  "uri": "libs/community/langchain_community/vectorstores/lantern.py"
                 },
                 "region": {
                   "startLine": 349,
@@ -3603,7 +3603,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/sql_database.py"
+                  "uri": "libs/community/langchain_community/document_loaders/sql_database.py"
                 },
                 "region": {
                   "startLine": 83,
@@ -3631,7 +3631,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/analyticdb.py"
+                  "uri": "libs/community/langchain_community/vectorstores/analyticdb.py"
                 },
                 "region": {
                   "startLine": 287,
@@ -3659,7 +3659,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/jaguar.py"
+                  "uri": "libs/community/langchain_community/vectorstores/jaguar.py"
                 },
                 "region": {
                   "startLine": 433,
@@ -3687,7 +3687,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/youtube.py"
+                  "uri": "libs/community/langchain_community/document_loaders/youtube.py"
                 },
                 "region": {
                   "startLine": 10,
@@ -3715,7 +3715,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/output_parsers/xml.py"
+                  "uri": "libs/core/langchain_core/output_parsers/xml.py"
                 },
                 "region": {
                   "startLine": 4,
@@ -3743,7 +3743,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/output_parsers/xml.py"
+                  "uri": "libs/core/langchain_core/output_parsers/xml.py"
                 },
                 "region": {
                   "startLine": 7,
@@ -3771,7 +3771,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/quip.py"
+                  "uri": "libs/community/langchain_community/document_loaders/quip.py"
                 },
                 "region": {
                   "startLine": 3,
@@ -3799,7 +3799,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/quip.py"
+                  "uri": "libs/community/langchain_community/document_loaders/quip.py"
                 },
                 "region": {
                   "startLine": 6,
