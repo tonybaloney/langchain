@@ -29,4 +29,4 @@ jobs:
     - name: Upload SARIFs
       uses: github/codeql-action/upload-sarif@v3
       with:
-          sarif_file: .github/reviews/*.sarif
+          sarif_file: .github/reviews/report_2025-02-24_05-38-39.sarif
