@@ -1,0 +1,32 @@
+name: "Manual Security Reviews"
+
+on:
+  push:
+    branches: [ "sec_review", "master" ]
+  pull_request:
+    branches: [ "sec_review", "master" ]
+
+jobs:
+  analyze:
+    name: Upload SARIFs
+    runs-on: 'ubuntu-latest'
+    permissions:
+      # required for all workflows
+      security-events: write
+
+      # required to fetch internal or private CodeQL packs
+      packages: read
+
+      # only required for workflows in private repositories
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Upload SARIFs
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+          sarif_file: ./.github/reviews/*.sarif

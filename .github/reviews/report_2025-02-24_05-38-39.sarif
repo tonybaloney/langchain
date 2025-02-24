@@ -1,0 +1,3826 @@
+{
+  "$schema": "https://raw.githubusercontent.com/schemastore/schemastore/master/src/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "PyCharm",
+          "version": "243.24978.54",
+          "informationUri": "https://www.jetbrains.com?utm_source=product&utm_medium=link&utm_campaign=PY&utm_content=2024.3",
+          "rules": [
+            {
+              "id": "InsecureHashInspection",
+              "name": "HL100, HL101: Insecure hashing algorithms."
+            },
+            {
+              "id": "PickleLoadInspection",
+              "name": "PIC100: Loading serialized data with the pickle module."
+            },
+            {
+              "id": "TimingAttackInspection",
+              "name": "PW100: Comparing secrets and passwords insecurely."
+            },
+            {
+              "id": "HardcodedPasswordInspection",
+              "name": "PW101: Hardcoded passwords and secrets."
+            },
+            {
+              "id": "RequestsNoVerifyInspection",
+              "name": "RQ100: Setting verify=False when using requests."
+            },
+            {
+              "id": "SqlInjectionInspection",
+              "name": "SQL100: Possible SQL injection."
+            },
+            {
+              "id": "SqlAlchemyUnsafeQueryInspection",
+              "name": "SQL200: Possible SQL injection through SQLAlchemy API."
+            },
+            {
+              "id": "HardcodedTempFileInspection",
+              "name": "TMP101: Reading or writing temporary files with a hardcoded path."
+            },
+            {
+              "id": "StandardLibraryXmlInspection",
+              "name": "XML100: Usage of xml modules in the Python standard library."
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "workingDirectory": {
+            "uri": "file:///C:/Users/anthonyshaw/PycharmProjects/langchain/"
+          }
+        }
+      ],
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha1(serialized_data.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 18,
+                  "endLine": 47,
+                  "endColumn": 63,
+                  "charOffset": 1394,
+                  "charLength": 45,
+                  "snippet": {
+                    "text": "hashlib.sha1(serialized_data.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.sha1(input_string.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 18,
+                  "endLine": 40,
+                  "endColumn": 60,
+                  "charOffset": 1062,
+                  "charLength": 42,
+                  "snippet": {
+                    "text": "hashlib.sha1(input_string.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.sha1(serialized_data.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 18,
+                  "endLine": 47,
+                  "endColumn": 63,
+                  "charOffset": 1394,
+                  "charLength": 45,
+                  "snippet": {
+                    "text": "hashlib.sha1(serialized_data.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/embeddings/fake.py"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 20,
+                  "endLine": 117,
+                  "endColumn": 56,
+                  "charOffset": 3593,
+                  "charLength": 36,
+                  "snippet": {
+                    "text": "hashlib.sha256(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5( doc.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/age_graph.py"
+                },
+                "region": {
+                  "startLine": 729,
+                  "startColumn": 49,
+                  "endLine": 731,
+                  "endColumn": 22,
+                  "charOffset": 25833,
+                  "charLength": 90,
+                  "snippet": {
+                    "text": "md5(\n                        doc.source.page_content.encode(\"utf-8\")\n                    )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/myscale.py"
+                },
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 23,
+                  "endLine": 252,
+                  "endColumn": 46,
+                  "charOffset": 8620,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5()'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/vectara.py"
+                },
+                "region": {
+                  "startLine": 387,
+                  "startColumn": 20,
+                  "endLine": 387,
+                  "endColumn": 25,
+                  "charOffset": 13711,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "md5()"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha1(input_string.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/indexing/api.py"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 18,
+                  "endLine": 40,
+                  "endColumn": 60,
+                  "charOffset": 1062,
+                  "charLength": 42,
+                  "snippet": {
+                    "text": "hashlib.sha1(input_string.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/myscale.py"
+                },
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 23,
+                  "endLine": 252,
+                  "endColumn": 46,
+                  "charOffset": 8620,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5( document.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/memgraph_graph.py"
+                },
+                "region": {
+                  "startLine": 499,
+                  "startColumn": 54,
+                  "endLine": 501,
+                  "endColumn": 22,
+                  "charOffset": 17033,
+                  "charLength": 95,
+                  "snippet": {
+                    "text": "md5(\n                        document.source.page_content.encode(\"utf-8\")\n                    )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.md5(rsc_dict[elem.tag])'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/evernote.py"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 36,
+                  "endLine": 92,
+                  "endColumn": 67,
+                  "charOffset": 3510,
+                  "charLength": 31,
+                  "snippet": {
+                    "text": "hashlib.md5(rsc_dict[elem.tag])"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5( document.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/memgraph_graph.py"
+                },
+                "region": {
+                  "startLine": 499,
+                  "startColumn": 54,
+                  "endLine": 501,
+                  "endColumn": 22,
+                  "charOffset": 17033,
+                  "charLength": 95,
+                  "snippet": {
+                    "text": "md5(\n                        document.source.page_content.encode(\"utf-8\")\n                    )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha1(s.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/callbacks/utils.py"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 12,
+                  "endLine": 74,
+                  "endColumn": 43,
+                  "charOffset": 2217,
+                  "charLength": 31,
+                  "snippet": {
+                    "text": "hashlib.sha1(s.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.md5(dg_chunk.text.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/docugami.py"
+                },
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 26,
+                  "endLine": 132,
+                  "endColumn": 61,
+                  "charOffset": 4201,
+                  "charLength": 35,
+                  "snippet": {
+                    "text": "hashlib.md5(dg_chunk.text.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha1(vector_str.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/yellowbrick.py"
+                },
+                "region": {
+                  "startLine": 510,
+                  "startColumn": 23,
+                  "endLine": 510,
+                  "endColumn": 56,
+                  "charOffset": 16620,
+                  "charLength": 33,
+                  "snippet": {
+                    "text": "hashlib.sha1(vector_str.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/manticore_search.py"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 21,
+                  "endLine": 212,
+                  "endColumn": 44,
+                  "charOffset": 6787,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/apache_doris.py"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 23,
+                  "endLine": 212,
+                  "endColumn": 46,
+                  "charOffset": 7067,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/embeddings/fake.py"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 20,
+                  "endLine": 44,
+                  "endColumn": 56,
+                  "charOffset": 1181,
+                  "charLength": 36,
+                  "snippet": {
+                    "text": "hashlib.sha256(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5( document.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/kuzu_graph.py"
+                },
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 54,
+                  "endLine": 190,
+                  "endColumn": 22,
+                  "charOffset": 7619,
+                  "charLength": 95,
+                  "snippet": {
+                    "text": "md5(\n                        document.source.page_content.encode(\"utf-8\")\n                    )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.sha1(s.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/callbacks/utils.py"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 12,
+                  "endLine": 74,
+                  "endColumn": 43,
+                  "charOffset": 2217,
+                  "charLength": 31,
+                  "snippet": {
+                    "text": "hashlib.sha1(s.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.sha1(input_string.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/langchain/langchain/embeddings/cache.py"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 18,
+                  "endLine": 29,
+                  "endColumn": 60,
+                  "charOffset": 866,
+                  "charLength": 42,
+                  "snippet": {
+                    "text": "hashlib.sha1(input_string.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5( doc.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/age_graph.py"
+                },
+                "region": {
+                  "startLine": 729,
+                  "startColumn": 49,
+                  "endLine": 731,
+                  "endColumn": 22,
+                  "charOffset": 25833,
+                  "charLength": 90,
+                  "snippet": {
+                    "text": "md5(\n                        doc.source.page_content.encode(\"utf-8\")\n                    )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.sha1(vector_str.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/yellowbrick.py"
+                },
+                "region": {
+                  "startLine": 510,
+                  "startColumn": 23,
+                  "endLine": 510,
+                  "endColumn": 56,
+                  "charOffset": 16620,
+                  "charLength": 33,
+                  "snippet": {
+                    "text": "hashlib.sha1(vector_str.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(_id.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                },
+                "region": {
+                  "startLine": 628,
+                  "startColumn": 17,
+                  "endLine": 628,
+                  "endColumn": 45,
+                  "charOffset": 21049,
+                  "charLength": 28,
+                  "snippet": {
+                    "text": "hashlib.sha256(_id.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.md5(document.source.page_content.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/gremlin_graph.py"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 26,
+                  "endLine": 129,
+                  "endColumn": 76,
+                  "charOffset": 5020,
+                  "charLength": 50,
+                  "snippet": {
+                    "text": "hashlib.md5(document.source.page_content.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.md5(input_string.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                },
+                "region": {
+                  "startLine": 1614,
+                  "startColumn": 16,
+                  "endLine": 1614,
+                  "endColumn": 50,
+                  "charOffset": 60410,
+                  "charLength": 34,
+                  "snippet": {
+                    "text": "hashlib.md5(input_string.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                },
+                "region": {
+                  "startLine": 954,
+                  "startColumn": 20,
+                  "endLine": 954,
+                  "endColumn": 45,
+                  "charOffset": 34601,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha1(input_string.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/langchain/langchain/embeddings/cache.py"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 18,
+                  "endLine": 29,
+                  "endColumn": 60,
+                  "charOffset": 866,
+                  "charLength": 42,
+                  "snippet": {
+                    "text": "hashlib.sha1(input_string.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/retrievers/pinecone_hybrid_search.py"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 16,
+                  "endLine": 23,
+                  "endColumn": 52,
+                  "charOffset": 578,
+                  "charLength": 36,
+                  "snippet": {
+                    "text": "hashlib.sha256(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5(uc_type_json_str.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/databricks/tool.py"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 25,
+                  "endLine": 78,
+                  "endColumn": 55,
+                  "charOffset": 3014,
+                  "charLength": 30,
+                  "snippet": {
+                    "text": "md5(uc_type_json_str.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.md5(_input.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 12,
+                  "endLine": 105,
+                  "endColumn": 40,
+                  "charOffset": 2956,
+                  "charLength": 28,
+                  "snippet": {
+                    "text": "hashlib.md5(_input.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                },
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 20,
+                  "endLine": 183,
+                  "endColumn": 43,
+                  "charOffset": 6964,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                },
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 20,
+                  "endLine": 183,
+                  "endColumn": 43,
+                  "charOffset": 6964,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                },
+                "region": {
+                  "startLine": 418,
+                  "startColumn": 20,
+                  "endLine": 418,
+                  "endColumn": 43,
+                  "charOffset": 15730,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5( document.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/neo4j_graph.py"
+                },
+                "region": {
+                  "startLine": 651,
+                  "startColumn": 50,
+                  "endLine": 653,
+                  "endColumn": 18,
+                  "charOffset": 25462,
+                  "charLength": 87,
+                  "snippet": {
+                    "text": "md5(\n                    document.source.page_content.encode(\"utf-8\")\n                )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                },
+                "region": {
+                  "startLine": 944,
+                  "startColumn": 20,
+                  "endLine": 944,
+                  "endColumn": 45,
+                  "charOffset": 33454,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                },
+                "region": {
+                  "startLine": 777,
+                  "startColumn": 20,
+                  "endLine": 777,
+                  "endColumn": 45,
+                  "charOffset": 28653,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.md5(input_string.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                },
+                "region": {
+                  "startLine": 1614,
+                  "startColumn": 16,
+                  "endLine": 1614,
+                  "endColumn": 50,
+                  "charOffset": 60410,
+                  "charLength": 34,
+                  "snippet": {
+                    "text": "hashlib.md5(input_string.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5( document.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/neo4j_graph.py"
+                },
+                "region": {
+                  "startLine": 651,
+                  "startColumn": 50,
+                  "endLine": 653,
+                  "endColumn": 18,
+                  "charOffset": 25462,
+                  "charLength": 87,
+                  "snippet": {
+                    "text": "md5(\n                    document.source.page_content.encode(\"utf-8\")\n                )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                },
+                "region": {
+                  "startLine": 954,
+                  "startColumn": 20,
+                  "endLine": 954,
+                  "endColumn": 45,
+                  "charOffset": 34601,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.md5(rsc_dict[elem.tag])'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/evernote.py"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 36,
+                  "endLine": 92,
+                  "endColumn": 67,
+                  "charOffset": 3510,
+                  "charLength": 31,
+                  "snippet": {
+                    "text": "hashlib.md5(rsc_dict[elem.tag])"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'hashlib.md5(_input.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/cache.py"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 12,
+                  "endLine": 105,
+                  "endColumn": 40,
+                  "charOffset": 2956,
+                  "charLength": 28,
+                  "snippet": {
+                    "text": "hashlib.md5(_input.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.md5(dg_chunk.text.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/docugami.py"
+                },
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 26,
+                  "endLine": 132,
+                  "endColumn": 61,
+                  "charOffset": 4201,
+                  "charLength": 35,
+                  "snippet": {
+                    "text": "hashlib.md5(dg_chunk.text.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                },
+                "region": {
+                  "startLine": 869,
+                  "startColumn": 20,
+                  "endLine": 869,
+                  "endColumn": 45,
+                  "charOffset": 30664,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/starrocks.py"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 23,
+                  "endLine": 265,
+                  "endColumn": 46,
+                  "charOffset": 8419,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/apache_doris.py"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 23,
+                  "endLine": 212,
+                  "endColumn": 46,
+                  "charOffset": 7067,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(input_string.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/oracleai.py"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 23,
+                  "endLine": 88,
+                  "endColumn": 60,
+                  "charOffset": 2335,
+                  "charLength": 37,
+                  "snippet": {
+                    "text": "hashlib.sha256(input_string.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.md5(document.source.page_content.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/gremlin_graph.py"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 26,
+                  "endLine": 129,
+                  "endColumn": 76,
+                  "charOffset": 5020,
+                  "charLength": 50,
+                  "snippet": {
+                    "text": "hashlib.md5(document.source.page_content.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(metadata[\"id\"].encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                },
+                "region": {
+                  "startLine": 619,
+                  "startColumn": 17,
+                  "endLine": 619,
+                  "endColumn": 56,
+                  "charOffset": 20680,
+                  "charLength": 39,
+                  "snippet": {
+                    "text": "hashlib.sha256(metadata[\"id\"].encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(_id.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                },
+                "region": {
+                  "startLine": 1019,
+                  "startColumn": 13,
+                  "endLine": 1019,
+                  "endColumn": 41,
+                  "charOffset": 35270,
+                  "charLength": 28,
+                  "snippet": {
+                    "text": "hashlib.sha256(_id.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/starrocks.py"
+                },
+                "region": {
+                  "startLine": 265,
+                  "startColumn": 23,
+                  "endLine": 265,
+                  "endColumn": 46,
+                  "charOffset": 8419,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/clickhouse.py"
+                },
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 23,
+                  "endLine": 462,
+                  "endColumn": 46,
+                  "charOffset": 16380,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5(uc_type_json_str.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/databricks/tool.py"
+                },
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 25,
+                  "endLine": 78,
+                  "endColumn": 55,
+                  "charOffset": 3014,
+                  "charLength": 30,
+                  "snippet": {
+                    "text": "md5(uc_type_json_str.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                },
+                "region": {
+                  "startLine": 869,
+                  "startColumn": 20,
+                  "endLine": 869,
+                  "endColumn": 45,
+                  "charOffset": 30664,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/clickhouse.py"
+                },
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 23,
+                  "endLine": 462,
+                  "endColumn": 46,
+                  "charOffset": 16380,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/falkordb_vector.py"
+                },
+                "region": {
+                  "startLine": 777,
+                  "startColumn": 20,
+                  "endLine": 777,
+                  "endColumn": 45,
+                  "charOffset": 28653,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5( document.source.page_content.encode(\"utf-8\") )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/kuzu_graph.py"
+                },
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 54,
+                  "endLine": 190,
+                  "endColumn": 22,
+                  "charOffset": 7619,
+                  "charLength": 95,
+                  "snippet": {
+                    "text": "md5(\n                        document.source.page_content.encode(\"utf-8\")\n                    )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'hashlib.sha256(_id.encode())'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                },
+                "region": {
+                  "startLine": 613,
+                  "startColumn": 17,
+                  "endLine": 613,
+                  "endColumn": 45,
+                  "charOffset": 20368,
+                  "charLength": 28,
+                  "snippet": {
+                    "text": "hashlib.sha256(_id.encode())"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/alibabacloud_opensearch.py"
+                },
+                "region": {
+                  "startLine": 418,
+                  "startColumn": 20,
+                  "endLine": 418,
+                  "endColumn": 43,
+                  "charOffset": 15730,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL100: MD4, MD5, SHA, and SHA1 hashing algorithms have cryptographically weak algorithms and should not be used for obfuscating or protecting data. Found in 'md5(text.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/neo4j_vector.py"
+                },
+                "region": {
+                  "startLine": 944,
+                  "startColumn": 20,
+                  "endLine": 944,
+                  "endColumn": 45,
+                  "charOffset": 33454,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "md5(text.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'md5()'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/vectara.py"
+                },
+                "region": {
+                  "startLine": 387,
+                  "startColumn": 20,
+                  "endLine": 387,
+                  "endColumn": 25,
+                  "charOffset": 13711,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "md5()"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "InsecureHashInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "HL101: MD5, SHA-1, RIPEMD-160, Whirlpool, and the SHA-256 / SHA-512 hash algorithms are all vulnerable to length-extension attacks and should not be used for obfuscating or protecting data. Use within a HMAC is not vulnerable. Found in 'sha1(t.encode(\"utf-8\"))'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/manticore_search.py"
+                },
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 21,
+                  "endLine": 212,
+                  "endColumn": 44,
+                  "charOffset": 6787,
+                  "charLength": 23,
+                  "snippet": {
+                    "text": "sha1(t.encode(\"utf-8\"))"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PickleLoadInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PIC100: Loading serialized data with the pickle module can expose arbitrary code execution using the __reduce__ method. Found in 'pickle.loads( # ignore[pickle]: explicit-opt-in np.array(pickled_metadata.tolis...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/tiledb.py"
+                },
+                "region": {
+                  "startLine": 191,
+                  "startColumn": 28,
+                  "endLine": 193,
+                  "endColumn": 18,
+                  "charOffset": 6634,
+                  "charLength": 149,
+                  "snippet": {
+                    "text": "pickle.loads(  # ignore[pickle]: explicit-opt-in\n                    np.array(pickled_metadata.tolist()).astype(np.uint8).tobytes()\n                )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PickleLoadInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PIC100: Loading serialized data with the pickle module can expose arbitrary code execution using the __reduce__ method. Found in 'pickle.load(f)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/self_hosted.py"
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 24,
+                  "endLine": 41,
+                  "endColumn": 38,
+                  "charOffset": 1220,
+                  "charLength": 14,
+                  "snippet": {
+                    "text": "pickle.load(f)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PickleLoadInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PIC100: Loading serialized data with the pickle module can expose arbitrary code execution using the __reduce__ method. Found in 'pickle.loads( # ignore[pickle]: explicit-opt-in serialized )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/faiss.py"
+                },
+                "region": {
+                  "startLine": 1249,
+                  "startColumn": 13,
+                  "endLine": 1251,
+                  "endColumn": 10,
+                  "charOffset": 45738,
+                  "charLength": 81,
+                  "snippet": {
+                    "text": "pickle.loads(  # ignore[pickle]: explicit-opt-in\n            serialized\n        )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PickleLoadInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PIC100: Loading serialized data with the pickle module can expose arbitrary code execution using the __reduce__ method. Found in 'pickle.load( # ignore[pickle]: explicit-opt-in f )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/scann.py"
+                },
+                "region": {
+                  "startLine": 500,
+                  "startColumn": 17,
+                  "endLine": 502,
+                  "endColumn": 14,
+                  "charOffset": 18327,
+                  "charLength": 79,
+                  "snippet": {
+                    "text": "pickle.load(  # ignore[pickle]: explicit-opt-in\n                f\n            )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PickleLoadInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PIC100: Loading serialized data with the pickle module can expose arbitrary code execution using the __reduce__ method. Found in 'pickle.load( # ignore[pickle]: explicit-opt-in f )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/faiss.py"
+                },
+                "region": {
+                  "startLine": 1212,
+                  "startColumn": 17,
+                  "endLine": 1214,
+                  "endColumn": 14,
+                  "charOffset": 44097,
+                  "charLength": 79,
+                  "snippet": {
+                    "text": "pickle.load(  # ignore[pickle]: explicit-opt-in\n                f\n            )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PickleLoadInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PIC100: Loading serialized data with the pickle module can expose arbitrary code execution using the __reduce__ method. Found in 'pickle.load( # ignore[pickle]: explicit-opt-in file )'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/annoy.py"
+                },
+                "region": {
+                  "startLine": 464,
+                  "startColumn": 17,
+                  "endLine": 466,
+                  "endColumn": 14,
+                  "charOffset": 17562,
+                  "charLength": 82,
+                  "snippet": {
+                    "text": "pickle.load(  # ignore[pickle]: explicit-opt-in\n                file\n            )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PickleLoadInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PIC100: Loading serialized data with the pickle module can expose arbitrary code execution using the __reduce__ method. Found in 'pickle.load(f)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/retrievers/tfidf.py"
+                },
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 33,
+                  "endLine": 157,
+                  "endColumn": 47,
+                  "charOffset": 5605,
+                  "charLength": 14,
+                  "snippet": {
+                    "text": "pickle.load(f)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token == eos_token_id'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/mlx_pipeline.py"
+                },
+                "region": {
+                  "startLine": 255,
+                  "startColumn": 16,
+                  "endLine": 255,
+                  "endColumn": 37,
+                  "charOffset": 8738,
+                  "charLength": 21,
+                  "snippet": {
+                    "text": "token == eos_token_id"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'password == \"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/neo4j_graph.py"
+                },
+                "region": {
+                  "startLine": 386,
+                  "startColumn": 31,
+                  "endLine": 386,
+                  "endColumn": 45,
+                  "charOffset": 14597,
+                  "charLength": 14,
+                  "snippet": {
+                    "text": "password == \"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token == END_OF_TEXT'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/rwkv.py"
+                },
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 16,
+                  "endLine": 192,
+                  "endColumn": 36,
+                  "charOffset": 6068,
+                  "charLength": 20,
+                  "snippet": {
+                    "text": "token == END_OF_TEXT"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token == eos_token_id'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_models/mlx.py"
+                },
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 16,
+                  "endLine": 220,
+                  "endColumn": 37,
+                  "charOffset": 6970,
+                  "charLength": 21,
+                  "snippet": {
+                    "text": "token == eos_token_id"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token == \"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/upstash_redis.py"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 25,
+                  "endLine": 34,
+                  "endColumn": 36,
+                  "charOffset": 880,
+                  "charLength": 11,
+                  "snippet": {
+                    "text": "token == \"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token != \"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/langchain/langchain/callbacks/streaming_aiter.py"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 34,
+                  "endLine": 34,
+                  "endColumn": 45,
+                  "charOffset": 970,
+                  "charLength": 11,
+                  "snippet": {
+                    "text": "token != \"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token == (\"section\", key)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/utils/mustache.py"
+                },
+                "region": {
+                  "startLine": 585,
+                  "startColumn": 24,
+                  "endLine": 585,
+                  "endColumn": 49,
+                  "charOffset": 18512,
+                  "charLength": 25,
+                  "snippet": {
+                    "text": "token == (\"section\", key)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'password == \"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/memgraph_graph.py"
+                },
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 31,
+                  "endLine": 304,
+                  "endColumn": 45,
+                  "charOffset": 9550,
+                  "charLength": 14,
+                  "snippet": {
+                    "text": "password == \"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token == (\"end\", key)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/utils/mustache.py"
+                },
+                "region": {
+                  "startLine": 587,
+                  "startColumn": 24,
+                  "endLine": 587,
+                  "endColumn": 45,
+                  "charOffset": 18610,
+                  "charLength": 21,
+                  "snippet": {
+                    "text": "token == (\"end\", key)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "TimingAttackInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW100: Matching inputs, secrets or tokens using the == operator is vulnerable to timing attacks. Use compare_digest() instead. Found in 'token == (\"end\", key)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/utils/mustache.py"
+                },
+                "region": {
+                  "startLine": 529,
+                  "startColumn": 24,
+                  "endLine": 529,
+                  "endColumn": 45,
+                  "charOffset": 16286,
+                  "charLength": 21,
+                  "snippet": {
+                    "text": "token == (\"end\", key)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "HardcodedPasswordInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW101: Passwords, secrets or keys should not be hardcoded into Python code.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/llms/xinference.py"
+                },
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 9,
+                  "endLine": 287,
+                  "endColumn": 19,
+                  "charOffset": 8904,
+                  "charLength": 10,
+                  "snippet": {
+                    "text": "token = \"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "HardcodedPasswordInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW101: Passwords, secrets or keys should not be hardcoded into Python code.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/apache_doris.py"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 5,
+                  "endLine": 49,
+                  "endColumn": 23,
+                  "charOffset": 1808,
+                  "charLength": 18,
+                  "snippet": {
+                    "text": "password: str = \"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "HardcodedPasswordInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "PW101: Passwords, secrets or keys should not be hardcoded into Python code.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/starrocks.py"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 5,
+                  "endLine": 100,
+                  "endColumn": 23,
+                  "charOffset": 3018,
+                  "charLength": 18,
+                  "snippet": {
+                    "text": "password: str = \"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RequestsNoVerifyInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "RQ100: Setting verify=False when using requests bypasses SSL verification and leaves requests susceptible to MITM attacks. Found in 'requests.post(self.api_url, headers=headers, verify=False, data=data)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 20,
+                  "endLine": 79,
+                  "endColumn": 89,
+                  "charOffset": 2512,
+                  "charLength": 69,
+                  "snippet": {
+                    "text": "requests.post(self.api_url, headers=headers, verify=False, data=data)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RequestsNoVerifyInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "RQ100: Setting verify=False when using requests bypasses SSL verification and leaves requests susceptible to MITM attacks. Found in 'requests.post( self.knowledgesource_file, headers=headers, verif...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                },
+                "region": {
+                  "startLine": 283,
+                  "startColumn": 20,
+                  "endLine": 289,
+                  "endColumn": 10,
+                  "charOffset": 9921,
+                  "charLength": 166,
+                  "snippet": {
+                    "text": "requests.post(\n            self.knowledgesource_file,\n            headers=headers,\n            verify=False,\n            data=data,\n            files=files,\n        )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RequestsNoVerifyInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "RQ100: Setting verify=False when using requests bypasses SSL verification and leaves requests susceptible to MITM attacks. Found in 'requests.post( self.knowledgesource_url, headers=headers, ...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                },
+                "region": {
+                  "startLine": 390,
+                  "startColumn": 24,
+                  "endLine": 395,
+                  "endColumn": 14,
+                  "charOffset": 13724,
+                  "charLength": 160,
+                  "snippet": {
+                    "text": "requests.post(\n                self.knowledgesource_url,\n                headers=headers,\n                verify=False,\n                data=data,\n            )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "RequestsNoVerifyInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "RQ100: Setting verify=False when using requests bypasses SSL verification and leaves requests susceptible to MITM attacks. Found in 'requests.get( self.knowledge_status_url, headers=headers, params...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/cogniswitch/tool.py"
+                },
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 20,
+                  "endLine": 147,
+                  "endColumn": 10,
+                  "charOffset": 4648,
+                  "charLength": 144,
+                  "snippet": {
+                    "text": "requests.get(\n            self.knowledge_status_url,\n            headers=headers,\n            params=params,\n            verify=False,\n        )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"DELETE FROM {self.config.database}.{self.config.table} \"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/myscale.py"
+                },
+                "region": {
+                  "startLine": 490,
+                  "startColumn": 13,
+                  "endLine": 490,
+                  "endColumn": 71,
+                  "charOffset": 18003,
+                  "charLength": 58,
+                  "snippet": {
+                    "text": "f\"DELETE FROM {self.config.database}.{self.config.table} \""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"SELECT {}, {}, {}({}, JSON_ARRAY_PACK(%s)) as __score FROM {} {} ORDER BY...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 810,
+                  "startColumn": 25,
+                  "endLine": 811,
+                  "endColumn": 69,
+                  "charOffset": 34927,
+                  "charLength": 125,
+                  "snippet": {
+                    "text": "\"\"\"SELECT {}, {}, {}({}, JSON_ARRAY_PACK(%s)) as __score\n                        FROM {} {} ORDER BY __score {}{} LIMIT %s\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"DELETE FROM {} WHERE {} IN ({})\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 465,
+                  "startColumn": 21,
+                  "endLine": 465,
+                  "endColumn": 54,
+                  "charOffset": 19190,
+                  "charLength": 33,
+                  "snippet": {
+                    "text": "\"DELETE FROM {} WHERE {} IN ({})\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT message FROM {self.table_name} WHERE session_id = %s ORDER BY id;\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/postgres.py"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 13,
+                  "endLine": 71,
+                  "endColumn": 88,
+                  "charOffset": 2229,
+                  "charLength": 75,
+                  "snippet": {
+                    "text": "f\"SELECT message FROM {self.table_name} WHERE session_id = %s ORDER BY id;\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT COUNT(*) FROM {table_name}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                },
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 28,
+                  "endLine": 110,
+                  "endColumn": 64,
+                  "charOffset": 3141,
+                  "charLength": 36,
+                  "snippet": {
+                    "text": "f\"SELECT COUNT(*) FROM {table_name}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"INSERT INTO {self.table_name} (id, embedding, metadata, \"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                },
+                "region": {
+                  "startLine": 657,
+                  "startColumn": 17,
+                  "endLine": 657,
+                  "endColumn": 76,
+                  "charOffset": 22121,
+                  "charLength": 59,
+                  "snippet": {
+                    "text": "f\"INSERT INTO {self.table_name} (id, embedding, metadata, \""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"SELECT {}, {}, MATCH ({}) AGAINST (%s) as __score FROM {} {} ORDER BY __s...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 832,
+                  "startColumn": 25,
+                  "endLine": 833,
+                  "endColumn": 69,
+                  "charOffset": 36076,
+                  "charLength": 121,
+                  "snippet": {
+                    "text": "\"\"\"SELECT {}, {}, MATCH ({}) AGAINST (%s) as __score\n                        FROM {} {} ORDER BY __score DESC LIMIT %s\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"DELETE FROM {self.table_name} WHERE session_id = %s;\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/postgres.py"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 17,
+                  "endLine": 92,
+                  "endColumn": 72,
+                  "charOffset": 3051,
+                  "charLength": 55,
+                  "snippet": {
+                    "text": "f\"DELETE FROM {self.table_name} WHERE session_id = %s;\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f'INSERT INTO \"{self.table_name}\" (\"{self.content_column}\", ''."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/hanavector.py"
+                },
+                "region": {
+                  "startLine": 397,
+                  "startColumn": 17,
+                  "endLine": 397,
+                  "endColumn": 78,
+                  "charOffset": 14598,
+                  "charLength": 61,
+                  "snippet": {
+                    "text": "f'INSERT INTO \"{self.table_name}\" (\"{self.content_column}\", '"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT * FROM {table} LIMIT {self._sample_rows_in_table_info}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/spark_sql.py"
+                },
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 17,
+                  "endLine": 130,
+                  "endColumn": 81,
+                  "charOffset": 5281,
+                  "charLength": 64,
+                  "snippet": {
+                    "text": "f\"SELECT * FROM {table} LIMIT {self._sample_rows_in_table_info}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"INSERT INTO {self._table}(text, metadata, text_embedding) VALUES (?,?,?)\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevec.py"
+                },
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 13,
+                  "endLine": 135,
+                  "endColumn": 88,
+                  "charOffset": 4057,
+                  "charLength": 75,
+                  "snippet": {
+                    "text": "f\"INSERT INTO {self._table}(text, metadata, text_embedding) VALUES (?,?,?)\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT rowid FROM {self._table} WHERE rowid > {max_id}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevss.py"
+                },
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 13,
+                  "endLine": 130,
+                  "endColumn": 70,
+                  "charOffset": 3911,
+                  "charLength": 57,
+                  "snippet": {
+                    "text": "f\"SELECT rowid FROM {self._table} WHERE rowid > {max_id}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"DELETE FROM {} WHERE {} = %s\"\"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 268,
+                  "startColumn": 21,
+                  "endLine": 268,
+                  "endColumn": 55,
+                  "charOffset": 10029,
+                  "charLength": 34,
+                  "snippet": {
+                    "text": "\"\"\"DELETE FROM {} WHERE {} = %s\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"SELECT graphid FROM ag_catalog.ag_graph WHERE name = '{}'\"\"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/graphs/age_graph.py"
+                },
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 17,
+                  "endLine": 89,
+                  "endColumn": 80,
+                  "charOffset": 2961,
+                  "charLength": 63,
+                  "snippet": {
+                    "text": "\"\"\"SELECT graphid FROM ag_catalog.ag_graph WHERE name = '{}'\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"DELETE FROM {self.table_name} WHERE id IN ({placeholders})\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/oraclevs.py"
+                },
+                "region": {
+                  "startLine": 1025,
+                  "startColumn": 15,
+                  "endLine": 1025,
+                  "endColumn": 76,
+                  "charOffset": 35522,
+                  "charLength": 61,
+                  "snippet": {
+                    "text": "f\"DELETE FROM {self.table_name} WHERE id IN ({placeholders})\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"SELECT {}, {}, __score1 * %s + __score2 * %s as __score FROM ( ...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 844,
+                  "startColumn": 25,
+                  "endLine": 850,
+                  "endColumn": 78,
+                  "charOffset": 36697,
+                  "charLength": 456,
+                  "snippet": {
+                    "text": "\"\"\"SELECT {}, {}, __score1 * %s + __score2 * %s as __score\n                        FROM (\n                            SELECT {}, {}, {}, MATCH ({}) AGAINST (%s) as __score1 \n                        FROM {} {}) r1 FULL OUTER JOIN (\n                            SELECT {}, {}({}, JSON_ARRAY_PACK(%s)) as __score2\n                            FROM {} {} ORDER BY __score2 {} LIMIT %s\n                        ) r2 ON r1.{} = r2.{} ORDER BY __score {} LIMIT %s\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT * FROM {function.full_name}(\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/tools/databricks/_execution.py"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 22,
+                  "endLine": 67,
+                  "endColumn": 60,
+                  "charOffset": 1934,
+                  "charLength": 38,
+                  "snippet": {
+                    "text": "f\"SELECT * FROM {function.full_name}(\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT rowid FROM {self._table} WHERE rowid > {max_id}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevec.py"
+                },
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 13,
+                  "endLine": 141,
+                  "endColumn": 70,
+                  "charOffset": 4303,
+                  "charLength": 57,
+                  "snippet": {
+                    "text": "f\"SELECT rowid FROM {self._table} WHERE rowid > {max_id}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"INSERT INTO {self._table}(text, metadata, text_embedding) VALUES (?,?,?)\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevss.py"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 13,
+                  "endLine": 124,
+                  "endColumn": 88,
+                  "charOffset": 3665,
+                  "charLength": 75,
+                  "snippet": {
+                    "text": "f\"INSERT INTO {self._table}(text, metadata, text_embedding) VALUES (?,?,?)\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"\"\"SELECT comment FROM system_schema.tables WHERE keyspace_name =...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                },
+                "region": {
+                  "startLine": 568,
+                  "startColumn": 13,
+                  "endLine": 571,
+                  "endColumn": 52,
+                  "charOffset": 21006,
+                  "charLength": 166,
+                  "snippet": {
+                    "text": "f\"\"\"SELECT comment \n                FROM system_schema.tables \n                WHERE keyspace_name = '{keyspace}' \n                AND table_name = '{table_name}';\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"\"\"SELECT index_name, kind, options FROM system_schema.indexes ...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                },
+                "region": {
+                  "startLine": 639,
+                  "startColumn": 13,
+                  "endLine": 642,
+                  "endColumn": 60,
+                  "charOffset": 23520,
+                  "charLength": 209,
+                  "snippet": {
+                    "text": "f\"\"\"SELECT index_name, kind, options \n                        FROM system_schema.indexes \n                        WHERE keyspace_name = '{keyspace}' \n                        AND table_name = '{table_name}';\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"SELECT {} FROM {} WHERE {} = %s\"\"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 224,
+                  "startColumn": 21,
+                  "endLine": 224,
+                  "endColumn": 58,
+                  "charOffset": 8526,
+                  "charLength": 37,
+                  "snippet": {
+                    "text": "\"\"\"SELECT {} FROM {} WHERE {} = %s\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"\"\"SELECT column_name, type, kind, clustering_order, position FROM syst...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                },
+                "region": {
+                  "startLine": 595,
+                  "startColumn": 13,
+                  "endLine": 598,
+                  "endColumn": 63,
+                  "charOffset": 21892,
+                  "charLength": 244,
+                  "snippet": {
+                    "text": "f\"\"\"SELECT column_name, type, kind, clustering_order, position \n                           FROM system_schema.columns \n                           WHERE keyspace_name = '{keyspace}' \n                           AND table_name = '{table_name}';\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"DELETE FROM {self.table_name} WHERE session_id = :session_id;\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/tidb.py"
+                },
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 22,
+                  "endLine": 132,
+                  "endColumn": 86,
+                  "charOffset": 4656,
+                  "charLength": 64,
+                  "snippet": {
+                    "text": "f\"DELETE FROM {self.table_name} WHERE session_id = :session_id;\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"select {_fields} from sources {_sources} where userQuery(){_filter}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/retrievers/vespa_retriever.py"
+                },
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 19,
+                  "endLine": 117,
+                  "endColumn": 89,
+                  "charOffset": 4255,
+                  "charLength": 70,
+                  "snippet": {
+                    "text": "f\"select {_fields} from sources {_sources} where userQuery(){_filter}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"INSERT INTO {self._table_name} VALUES (?,?,?,?)\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/duckdb.py"
+                },
+                "region": {
+                  "startLine": 187,
+                  "startColumn": 21,
+                  "endLine": 187,
+                  "endColumn": 71,
+                  "charOffset": 6956,
+                  "charLength": 50,
+                  "snippet": {
+                    "text": "f\"INSERT INTO {self._table_name} VALUES (?,?,?,?)\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT max(rowid) as rowid FROM {self._table}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevss.py"
+                },
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 13,
+                  "endLine": 111,
+                  "endColumn": 61,
+                  "charOffset": 3168,
+                  "charLength": 48,
+                  "snippet": {
+                    "text": "f\"SELECT max(rowid) as rowid FROM {self._table}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT * FROM {keyspace}.{table}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/cassandra_database.py"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 17,
+                  "endLine": 88,
+                  "endColumn": 52,
+                  "charOffset": 2877,
+                  "charLength": 35,
+                  "snippet": {
+                    "text": "f\"SELECT * FROM {keyspace}.{table}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"INSERT INTO {}({}, {}, {}) VALUES (%s, JSON_ARRAY_PACK(%s), %s)\"\"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 421,
+                  "startColumn": 25,
+                  "endLine": 422,
+                  "endColumn": 64,
+                  "charOffset": 17546,
+                  "charLength": 93,
+                  "snippet": {
+                    "text": "\"\"\"INSERT INTO {}({}, {}, {})\n                        VALUES (%s, JSON_ARRAY_PACK(%s), %s)\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT max(rowid) as rowid FROM {self._table}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/sqlitevec.py"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 13,
+                  "endLine": 122,
+                  "endColumn": 61,
+                  "charOffset": 3557,
+                  "charLength": 48,
+                  "snippet": {
+                    "text": "f\"SELECT max(rowid) as rowid FROM {self._table}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"INSERT INTO {self._table_name} SELECT * FROM df\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/duckdb.py"
+                },
+                "region": {
+                  "startLine": 196,
+                  "startColumn": 17,
+                  "endLine": 196,
+                  "endColumn": 67,
+                  "charOffset": 7313,
+                  "charLength": 50,
+                  "snippet": {
+                    "text": "f\"INSERT INTO {self._table_name} SELECT * FROM df\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT * FROM {_keyspace}.{table};\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/cassandra.py"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 26,
+                  "endLine": 88,
+                  "endColumn": 63,
+                  "charOffset": 3451,
+                  "charLength": 37,
+                  "snippet": {
+                    "text": "f\"SELECT * FROM {_keyspace}.{table};\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f'DELETE FROM \"{self.table_name}\" {where_str}''."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/hanavector.py"
+                },
+                "region": {
+                  "startLine": 698,
+                  "startColumn": 19,
+                  "endLine": 698,
+                  "endColumn": 65,
+                  "charOffset": 27683,
+                  "charLength": 46,
+                  "snippet": {
+                    "text": "f'DELETE FROM \"{self.table_name}\" {where_str}'"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in 'f\"SELECT 1 FROM `{self.project_id}.{self.dataset_name}\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/bigquery_vector_search.py"
+                },
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 17,
+                  "endLine": 220,
+                  "endColumn": 72,
+                  "charOffset": 9174,
+                  "charLength": 55,
+                  "snippet": {
+                    "text": "f\"SELECT 1 FROM `{self.project_id}.{self.dataset_name}\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlInjectionInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL100: Possible SQL injection within String format. Found in '\"\"\"INSERT INTO {} ({}, {}) VALUES (%s, %s)\"\"\"'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/chat_message_histories/singlestoredb.py"
+                },
+                "region": {
+                  "startLine": 248,
+                  "startColumn": 21,
+                  "endLine": 248,
+                  "endColumn": 66,
+                  "charOffset": 9350,
+                  "charLength": 45,
+                  "snippet": {
+                    "text": "\"\"\"INSERT INTO {} ({}, {}) VALUES (%s, %s)\"\"\""
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlAlchemyUnsafeQueryInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL200: Possible SQL injection through SQLAlchemy API Found in 'text(command)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/utilities/sql_database.py"
+                },
+                "region": {
+                  "startLine": 470,
+                  "startColumn": 27,
+                  "endLine": 470,
+                  "endColumn": 40,
+                  "charOffset": 19157,
+                  "charLength": 13,
+                  "snippet": {
+                    "text": "text(command)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlAlchemyUnsafeQueryInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL200: Possible SQL injection through SQLAlchemy API Found in 'text(sql_query)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/relyt.py"
+                },
+                "region": {
+                  "startLine": 351,
+                  "startColumn": 51,
+                  "endLine": 351,
+                  "endColumn": 66,
+                  "charOffset": 12753,
+                  "charLength": 15,
+                  "snippet": {
+                    "text": "text(sql_query)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlAlchemyUnsafeQueryInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL200: Possible SQL injection through SQLAlchemy API Found in 'sqlalchemy.text( \"CREATE INDEX IF NOT EXISTS {} \" \"ON {} USING hnsw (embeddi...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/lantern.py"
+                },
+                "region": {
+                  "startLine": 316,
+                  "startColumn": 30,
+                  "endLine": 329,
+                  "endColumn": 10,
+                  "charOffset": 10970,
+                  "charLength": 450,
+                  "snippet": {
+                    "text": "sqlalchemy.text(\n            \"CREATE INDEX IF NOT EXISTS {} \"\n            \"ON {} USING hnsw (embedding {}) \"\n            \"WITH (\"\n            \"dim = :dim, \"\n            \"m = :m, \"\n            \"ef_construction = :ef_construction, \"\n            \"ef = :ef\"\n            \");\".format(\n                quoted_name(self._index_name, True),\n                quoted_name(self.collection_name, True),\n                self._get_op_class(),\n            )\n        )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlAlchemyUnsafeQueryInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL200: Possible SQL injection through SQLAlchemy API Found in 'sqlalchemy.text( \"CREATE INDEX IF NOT EXISTS langchain_pg_embedding_idx \" \"O...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/pgembedding.py"
+                },
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 30,
+                  "endLine": 202,
+                  "endColumn": 10,
+                  "charOffset": 6176,
+                  "charLength": 401,
+                  "snippet": {
+                    "text": "sqlalchemy.text(\n            \"CREATE INDEX IF NOT EXISTS langchain_pg_embedding_idx \"\n            \"ON langchain_pg_embedding USING hnsw (embedding) \"\n            \"WITH (\"\n            \"maxelements = {}, \"\n            \"dims = {}, \"\n            \"m = {}, \"\n            \"efconstruction = {}, \"\n            \"efsearch = {}\"\n            \");\".format(max_elements, dims, m, ef_construction, ef_search)\n        )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlAlchemyUnsafeQueryInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL200: Possible SQL injection through SQLAlchemy API Found in 'sqlalchemy.text( \"DROP INDEX IF EXISTS {}\".format( quote...'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/lantern.py"
+                },
+                "region": {
+                  "startLine": 349,
+                  "startColumn": 17,
+                  "endLine": 353,
+                  "endColumn": 18,
+                  "charOffset": 12036,
+                  "charLength": 170,
+                  "snippet": {
+                    "text": "sqlalchemy.text(\n                    \"DROP INDEX IF EXISTS {}\".format(\n                        quoted_name(self._index_name, True)\n                    )\n                )"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlAlchemyUnsafeQueryInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL200: Possible SQL injection through SQLAlchemy API Found in 'sa.text(self.query)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/sql_database.py"
+                },
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 17,
+                  "endLine": 83,
+                  "endColumn": 36,
+                  "charOffset": 3672,
+                  "charLength": 19,
+                  "snippet": {
+                    "text": "sa.text(self.query)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SqlAlchemyUnsafeQueryInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "SQL200: Possible SQL injection through SQLAlchemy API Found in 'text(sql_query)'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/analyticdb.py"
+                },
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 51,
+                  "endLine": 287,
+                  "endColumn": 66,
+                  "charOffset": 10168,
+                  "charLength": 15,
+                  "snippet": {
+                    "text": "text(sql_query)"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "HardcodedTempFileInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "TMP101: Reading or writing temporary files with a hardcoded path is insecure and leaves it open to attackers replacing the file contents. Use tempfile.mkstemp instead. Found in 'open(\"/tmp/debugjaguar.log\", \"a\")'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/vectorstores/jaguar.py"
+                },
+                "region": {
+                  "startLine": 433,
+                  "startColumn": 14,
+                  "endLine": 433,
+                  "endColumn": 47,
+                  "charOffset": 13817,
+                  "charLength": 33,
+                  "snippet": {
+                    "text": "open(\"/tmp/debugjaguar.log\", \"a\")"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "StandardLibraryXmlInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "XML100: The xml modules in the Python standard library are not secure against maliciously constructed data. Found in 'from xml.etree.ElementTree import ParseError # OK: trusted-source'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/youtube.py"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 67,
+                  "charOffset": 248,
+                  "charLength": 66,
+                  "snippet": {
+                    "text": "from xml.etree.ElementTree import ParseError  # OK: trusted-source"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "StandardLibraryXmlInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "XML100: The xml modules in the Python standard library are not secure against maliciously constructed data. Found in 'import xml.etree.ElementTree as ET # noqa: N817'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/output_parsers/xml.py"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 49,
+                  "charOffset": 39,
+                  "charLength": 48,
+                  "snippet": {
+                    "text": "import xml.etree.ElementTree as ET  # noqa: N817"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "StandardLibraryXmlInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "XML100: The xml modules in the Python standard library are not secure against maliciously constructed data. Found in 'from xml.etree.ElementTree import TreeBuilder'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/core/langchain_core/output_parsers/xml.py"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 46,
+                  "charOffset": 189,
+                  "charLength": 45,
+                  "snippet": {
+                    "text": "from xml.etree.ElementTree import TreeBuilder"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "StandardLibraryXmlInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "XML100: The xml modules in the Python standard library are not secure against maliciously constructed data. Found in 'import xml.etree.cElementTree # OK: user-must-opt-in'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/quip.py"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 54,
+                  "charOffset": 25,
+                  "charLength": 53,
+                  "snippet": {
+                    "text": "import xml.etree.cElementTree  # OK: user-must-opt-in"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "StandardLibraryXmlInspection",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "XML100: The xml modules in the Python standard library are not secure against maliciously constructed data. Found in 'from xml.etree.ElementTree import ElementTree # OK: user-must-opt-in'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "..\\ile://C:/Users/anthonyshaw/PycharmProjects/langchain/libs/community/langchain_community/document_loaders/quip.py"
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1,
+                  "endLine": 6,
+                  "endColumn": 70,
+                  "charOffset": 146,
+                  "charLength": 69,
+                  "snippet": {
+                    "text": "from xml.etree.ElementTree import ElementTree  # OK: user-must-opt-in"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
